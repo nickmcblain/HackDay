@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>UoN Student Hackathon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Loading Flat UI -->
+    <link href="css/flat-ui.css" rel="stylesheet">
+    
+    <link href="css/custom.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+    <div class="top-nav row">
+      <div class="col-md-4 col-md-offset-2">
+        <div class="name">
+          <a class="brand" href="http://hacksocnotts.co.uk">
+          hacksocnotts
+          <span class="green-font">.co.uk</span>
+          </a>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="hero">
+
+      <div class="container">
+        <h2 class="title no-border type-centered type-caps"><img src="images/Logo3.png">
+      
+        <div class="row boxes">
+          <div class="col-md-3">
+            <div class="content">
+              <h4>Title</h4>
+              <p>
+                <small>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</small>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="content">
+              <h4>Title</h4>
+              <p>
+                <small>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</small>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="content">
+              <h4>Title</h4>
+              <p>
+                <small>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</small>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="content">
+              <h4>Title</h4>
+              <p>
+                <small>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /.container -->
+
+    <div class="more">
+      
+      
+    </div>
+
+    </div> <!-- /container -->
+
+    <div class="more-2">
+
+    </div>
+    
+    <!-- Load JS here for greater good =============================-->
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/bootstrap-switch.js"></script>
+    <script src="js/flatui-checkbox.js"></script>
+    <script src="js/flatui-radio.js"></script>
+    <script src="js/jquery.tagsinput.js"></script>
+    <script src="js/jquery.placeholder.js"></script>
+    <script src="js/jquery.stacktable.js"></script>
+    <script src="js/application.js"></script>
+    <script>
+    $(document).ready(function(){
+      
+       
+        $(window).scroll(function() {
+            var yPos = -(($(window).scrollTop()/5)+100); 
+             
+            // Put together our final background position
+            var coords = '50% '+ yPos + 'px';
+ 
+            // Move the background
+            $('body').css({ backgroundPosition: coords });
+
+            // var yPos = -(($(window).scrollTop())/5)+185;
+            // $('.boxes').css('top', yPos);
+        }); 
+     
+    }); 
+    </script>
+  </body>
+</html>
