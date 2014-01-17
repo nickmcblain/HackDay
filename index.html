@@ -14,6 +14,9 @@
     <link href="css/custom.css" rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon.ico">
 
+    <!-- Load Font -->
+    <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
     <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
@@ -37,44 +40,51 @@
 
       <div class="container">
         <h2 class="title no-border type-centered type-caps"><img src="images/Logo3.png">
-      
+      	
+      	<div class="row logos">
+      		<div class="col-md-3">
+              		<img src="images/facebook.jpg">
+          	</div>
+          	<div class="col-md-3">
+              		<img src="images/twilio.png">
+          	</div>
+          	<div class="col-md-3">
+              		<img src="images/sendgrid.png">
+          	</div>
+          	<div class="col-md-3">
+              		<img src="images/capitalone.png">
+          	</div>
+        </div>
+
         <div class="row boxes">
-          <div class="col-md-3">
+          <div class="col-md-4">
             <div class="content">
-              <h4>Title</h4>
+              <h4>24 Hours</h4>
               <p>
-                <small>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</small>
+               	Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
               </p>
             </div>
           </div>
           <div class="col-md-3">
             <div class="content">
-              <h4>Title</h4>
+              <h4>Food and drink</h4>
               <p>
-                <small>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</small>
+               	Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
               </p>
             </div>
           </div>
           <div class="col-md-3">
             <div class="content">
-              <h4>Title</h4>
+              <h4>Sponsors</h4>
               <p>
-                <small>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</small>
-              </p>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="content">
-              <h4>Title</h4>
-              <p>
-                <small>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</small>
+               	Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
               </p>
             </div>
           </div>
         </div>
       </div>
       <div style="width:50%; text-align:left; margin: auto;">
-  			<iframe style="margin-top: 200px;" src="http://http://www.eventbrite.com/e/hacksoc-hackday-tickets-10042574611" frameborder="0" height="500" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
+  			<iframe style="margin-top: 100px;" src="http://http://www.eventbrite.com/e/hacksoc-hackday-tickets-10042574611" frameborder="0" height="500" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
 	  </div>
     </div><!-- /.container -->
 
@@ -102,6 +112,7 @@
     <script src="js/jquery.placeholder.js"></script>
     <script src="js/jquery.stacktable.js"></script>
     <script src="js/application.js"></script>
+    <script src="js/Eventbrite.jquery.js"></script>
     <script>
     $(document).ready(function(){
       
@@ -120,7 +131,8 @@
         }); 
      
     });
-    eb_client.event_get( {'id': 4653432542 }, function( response ){
+    
+    eb_client.event_get( {'id': 10042574611 }, function( response ){
     	console.log( eb_client.widget.registration( response.event ) );
 	}); 
     </script>
