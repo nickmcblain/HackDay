@@ -119,7 +119,10 @@
             // $('.boxes').css('top', yPos);
         }); 
      
-    }); 
+    });
+    eb_client.event_get( {'id': 4653432542 }, function( response ){
+    	console.log( eb_client.widget.registration( response.event ) );
+	}); 
     </script>
   </body>
 </html>
