@@ -7,6 +7,7 @@ body{
 	/*background-repeat: no-repeat;*/
 
 	background: url('../images/background.jpg') 50% -100px no-repeat fixed; min-height: 1000px;
+	background-size: 100% 110%;
 }
 
 .title img{
